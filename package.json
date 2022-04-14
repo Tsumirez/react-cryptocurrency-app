@@ -1,7 +1,8 @@
 {
   "name": "react-crypto-currency",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://tsumirez.github.io/react-cryptocurrency-app/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@reduxjs/toolkit": "^1.8.1",
@@ -11,6 +12,7 @@
     "antd": "^4.19.5",
     "axios": "^0.26.1",
     "chart.js": "^3.7.1",
+    "gh-pages": "^3.2.3",
     "html-react-parser": "^1.4.10",
     "millify": "^4.0.0",
     "moment": "^2.29.2",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
