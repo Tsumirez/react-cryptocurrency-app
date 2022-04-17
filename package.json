@@ -2,7 +2,7 @@
   "name": "react-crypto-currency",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://tsumirez.github.io/react-cryptocurrency-app/",
+  "homepage": "/react-cryptocurrency-app/",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@reduxjs/toolkit": "^1.8.1",
