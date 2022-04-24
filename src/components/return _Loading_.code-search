@@ -1,0 +1,19 @@
+# Query: return "Loading...";
+# ContextLines: 1
+
+3 results - 3 files
+
+src/components/Cryptocurrencies.jsx:
+  21    if (isFetching) {
+  22:     return <Loader />
+  23    }
+
+src/components/CryptoDetails.jsx:
+  30  
+  31:   return <Loader />
+  32  
+
+src/components/News.jsx:
+  19  
+  20:   if (!newsList?.value) return <Loader />
+  21  

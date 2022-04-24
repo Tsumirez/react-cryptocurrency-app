@@ -5,6 +5,8 @@ import { useGetNewsQuery } from "../services/cryptoNewsApi";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 
 import demoImg from "../images/news.jpg";
+import Loader from './Loader';
+
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -17,7 +19,7 @@ const News = ({ simplified }) => {
     count: simplified ? 6 : 12,
   });
 
-  if (!newsList?.value) return "Loading...";
+  if (!newsList?.value) return <Loader />;
 
   return (
     <Row gutter={[16, 16]}>
